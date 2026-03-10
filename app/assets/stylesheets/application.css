@@ -1,0 +1,88 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+ body {
+    background-color: #f4f7f6;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  .cms-card {
+
+    background: lightgreen;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .ruby-text {
+    color: #CC0000;
+    font-weight: bold;
+  }
+
+/* ========================================
+   転職活動の学びサイト - 共通レイアウト
+   ======================================== */
+
+  .site-header {
+    background: #fff;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  }
+
+  .nav-menu {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0;
+    align-items: center;
+    min-height: 56px;
+  }
+
+  .nav-link {
+    color: #333;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .nav-link:hover {
+    background-color: #f5f5f5;
+    color: #111;
+  }
+
+  .main-content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .page-content h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+  }
+
+  .page-content p {
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+  }
