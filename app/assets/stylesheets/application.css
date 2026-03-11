@@ -67,6 +67,10 @@
     color: #111;
   }
 
+  .nav-link--current {
+    color: green;
+  }
+
   .main-content {
     max-width: 720px;
     margin: 0 auto;
