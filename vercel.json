@@ -1,27 +1,22 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "config.ru",
-      "use": "@vercel/ruby"
-    },
-    {
-      "src": "public/**",
-      "use": "@vercel/static"
+  "functions": {
+    "config/routes.rb": {
+      "runtime": "vercel-ruby@1.0.0"
     }
-  ],
+  },
   "routes": [
     {
       "src": "/assets/(.*)",
       "dest": "/public/assets/$1"
     },
     {
-      "src": "/(favicon\\.ico|robots\\.txt|icon\\.png|icon\\.svg)",
+      "src": "/(favicon\\.ico|robots\\.txt)",
       "dest": "/public/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "config.ru"
+      "dest": "config/routes.rb"
     }
   ]
 }
