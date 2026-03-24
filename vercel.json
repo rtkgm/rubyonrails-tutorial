@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "config/routes.rb": {
+    "config.ru": {
       "runtime": "vercel-ruby@1.0.0"
     }
   },
@@ -16,7 +16,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "config/routes.rb"
+      "dest": "config.ru"
     }
   ]
 }
