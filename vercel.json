@@ -1,19 +1,6 @@
 {
   "version": 2,
-  "functions": {
-    "config.ru": {
-      "runtime": "vercel-ruby@1.0.0"
-    }
-  },
   "routes": [
-    {
-      "src": "/assets/(.*)",
-      "dest": "/public/assets/$1"
-    },
-    {
-      "src": "/(favicon\\.ico|robots\\.txt)",
-      "dest": "/public/$1"
-    },
     {
       "src": "/(.*)",
       "dest": "config.ru"
